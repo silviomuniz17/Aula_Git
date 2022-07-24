@@ -1,0 +1,81 @@
+Modulo 4 aula 7
+-------------------------------
+:x enter = sair da tela de msg 
+
+#iniciar o projeto
+git init = iniciar projeto
+git init --bare = repositorio de servidor (apenas alterações)
+
+#Caminho remoto de onde salva os arquivos e pego os arquivos
+git remote -v = ver caminho remotos salvos
+git remote add nomedoservidor caminhodoservidor = ex.: git remote add servidor D:/Aula/servidor/
+git remote add origin "https://github.com/silviomuniz17/Alura_Git.git"
+git remote rm nomedocaminho = remover o caminho ex.: git remote rm servidor
+
+#Clonar um arquivo para uma pasta
+git clone caminhodoservidor nomedapasta = ex.: git clone /D/Aula/servidor/ projeto
+
+#enviar o arquivo no diretorio especifico
+git push nomedocaminho master = master nome criado - Servidor Local
+git push origin master = origin nome padrão -rede GITHUB
+
+
+#Puxar um arquivo para o diretorio 
+git pull local master = puxando do caminho 'local' branch 'master'
+
+#Branch
+git branch = mostrar todos branch cadastrados
+git branch nomedotitulo = criar um branch ex.: git branch titulo
+git checkout nomedobranch = selecionar branch que vou usar ex.: git checkout titulo
+git checkout -b nomedobranch = seleciona e já seleciona o branch ex.:git checkout -b titulo02
+git merge nomedobranch = unir os branch no master (precisa estar na master) ex.: git merge titulo02
+
+#Desfazer algo 
+git checkout -- nomedoarquivo = desfazer o add ."vai ficar vermelho"
+git reset HEAD nomedoarquivo = voltar o arquivo para fomato add. "vai ficar verde"
+git revert codigogrande (aparece quando get log)
+
+#Salvar em algum lugar para terminar depois
+git stash = Salvar arquivo (copia codigo 0b20939)
+git stash list = ver todos que estão salvos
+git stash pop = puxar o que salvou e remover de lá ao mesmo tempo
+
+#criando uma versão 
+git tag -a V0.1.0 -m "observaçãodo" = ex.:git tag -a V0.1.0 -m "Criando Primeira versão do sistema" criando a verção (v0.1.0)
+git tag = ver as versões criadas
+=================================================================================================
+git status = saber como está 
+git add . = add arquivo
+git commit -m "mensagem do que foi feito" = salvar as modificações 
+mkdir nomedapasta = criar pasta * rm -d nomedapasta = deletar pasta
+
+git log = saber o que foi feito (alterações)
+git log -p = log completo obs.: tecla q sai.
+git log --oneline = log uma linha 
+
+git config --local user.name "silviomuniz17"
+git config --local user.email "silvio.carlos.17@hotmail.com"
+
+==================================================================================================
+criar uma pasta para ser o servidor
+iniciar ele como servidor 
+
+criar pasta do projeto
+iniciar a pasta do projeito 
+enviar (add)
+commitar
+--
+criar pasta servidor local (ksdir)
+iniciar pasta servidor (init --bare)
+criar um caminho no usuario(remote)
+empurrar o projeito para o servidor (push)
+ir na pasta onde recebe o arquivo e puxa ele (pull)
+--
+Abrir github e criar repositorio
+copir a HTTPS criada pelo GitHub (remote)
+empurrar arquivo para o guit (push)
+--
+criar pasta Ana (mkdir)
+clonar pasta do servidor (clone)
+puxar o arquivo do servidor (pull)
+==================================================================================================

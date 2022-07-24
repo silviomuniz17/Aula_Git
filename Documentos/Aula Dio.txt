@@ -1,0 +1,70 @@
+
+Windows
+- CD / ..(voltar) = navegar emtre as pastas 
+- dir = lista de diretorios 
+- mkdir = criar pasta
+- del = Limpar pasta 
+- rmdir (nomePasta) s/ = Remover a pasta
+- cls = limpar tela
+- echo Hello = echo Hello > Hello.txt
+- echo "Ola mundo" | openssl sha1
+
+
+Unix
+- CD / ..(voltar) = navegar emtre as pastas
+- Is = lista de diretorios
+- mkdir = criar pasta
+- rm = Limpara pasta 
+- rm -d teste = deletar pasta
+- clear = limpar tela 
+
+
+Git
+
+ls = lista
+ls -a = listar ate pasta oculta
+clear = limpar tela
+cd nomepasta/ = selecinar pasta
+mkdir nomepasta = criar pasta
+echo > nomearquivo.txt = triar arquivo
+mv nomedoarquivo ./nomepasta/ = mover arquivo de pasta
+
+git config --list = ver as configurações do meu usuario
+git config --global --unset user.email = apagar email cadastrado
+git config --global user.email "meuemail" = criar email (igual ao github)
+git config --global --unset user.name = apagar nome cadastrado
+git config --global user.name "meuusuario" = criar usuario (igual ao github)
+git remote add origin(apelido) https://github.com/silviomuniz17/Livro_Receitas.git = passando o caminho do meu github
+git remote -v = listar os caminhos cadastrado
+git push origin(apelido) master = enviando codigo para o GitHub
+git clone URL = clonar um codigo de outra pessoa
+
+git init = iniciar o Git
+git config --global user.email "meu email"
+git config --global user.name "Silvio_Muniz"
+
+git status = ver se foi feito alguma alteração
+git add * = add o arquivo novo
+git commit -m "nomedoarquivo" = salvar o arquivo 
+
+==========================================
+Arquivo novo
+--------------
+Localiza pasta dos arquivos
+git init = iniciar o Git
+git add . = add o arquivo novo
+git commit -m "fist commit"
+git status = saber se deu certo 
+git remote add origin caminho
+git push origin master
+
+===============================================
+Passo a Passo
+-----------------------------
+Localiza pasta dos arquivos
+git add . = add o arquivo novo
+git commit -m "nomearquivo"
+git push origin master
+
+------------------------
+git pull origin master	
